@@ -16,7 +16,29 @@ const taskSchema = new Schema(
       maxLength: [35, "Email Must be Less then 20"],
       unique: true,
       lowercase: true,
+      trim: true,
     },
+    city : {
+      type: String,
+      required: true,
+      lowercase: true,
+      trim: true,
+    },
+    age : {
+      type : Number,
+      required : true,
+      trim: true,
+    },
+    phone : {
+      type : String,
+      required : true,
+      trim: true,
+    },
+    education : {
+      type : String,
+      required : true,
+      trim: true,
+    }
   },
   {
     timestamps: true,
